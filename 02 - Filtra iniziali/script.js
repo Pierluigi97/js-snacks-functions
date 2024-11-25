@@ -9,7 +9,7 @@ const inizialiFiltrate = (nomi, lettera) => {
 
     for(let i = 0; i < nomi.length; i++){
         const iniziale = nomi[i][0];
-        if(iniziale === lettera){
+        if(iniziale.toLowerCase() === lettera.toLowerCase()){
             nomiFiltrati.push(nomi[i])
         }
     } 
@@ -18,7 +18,7 @@ const inizialiFiltrate = (nomi, lettera) => {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(inizialiFiltrate(names, 'A'));
+console.log(inizialiFiltrate(names, 'a'));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
